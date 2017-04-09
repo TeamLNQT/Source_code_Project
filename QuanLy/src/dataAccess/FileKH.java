@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author
+ * @QuocLe
  */
 public class FileKH {
     File f = new File("KHACHHANG.DAT");

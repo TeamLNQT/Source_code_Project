@@ -4,22 +4,22 @@ import java.io.Serializable;
 
 /**
  *
- * @author
+ * @author Nhan
  */
 public class HoaDon implements Serializable{
-    private int diem;
-    private KhachHang sv;
+    private int soLuong;
+    private KhachHang khachHang;
     private MatHang mh;
 
     public HoaDon() {
     }
 
     public int getDiem() {
-        return diem;
+        return soLuong;
     }
 
     public void setDiem(int diem) {
-        this.diem = diem;
+        this.soLuong = diem;
     }
 
     public MatHang getMh() {
@@ -30,24 +30,19 @@ public class HoaDon implements Serializable{
         this.mh = mh;
     }
 
-    public KhachHang getSv() {
-        return sv;
+    public KhachHang getKH() {
+        return khachHang;
     }
 
-    public void setSv(KhachHang sv) {
-        this.sv = sv;
+    public void setKH(KhachHang sv) {
+        this.khachHang = sv;
     }
 
     public HoaDon(int diem, KhachHang sv, MatHang mh) {
-        this.diem = diem;
-        this.sv = sv;
+        this.soLuong = diem;
+        this.khachHang = sv;
         this.mh = mh;
     }
 
-//    public Object[] toArray()
-//    {
-//        return new Object[]{sv.getMaSV(),sv.getHo()+" "+sv.getTen(),mh.getTenMon()
-//            ,diem};
-//    }
     
 }

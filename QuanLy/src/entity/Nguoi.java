@@ -2,7 +2,7 @@ package entity;
 
 /**
  *
- * @author 
+ * @author Nhan
  */
 public class Nguoi implements java.io.Serializable{
     String ho;

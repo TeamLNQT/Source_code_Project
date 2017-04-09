@@ -1,44 +1,40 @@
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package entity;
 
 /**
  *
- * @author Thanh
+ * @author Nhan
  */
 public class KhachHang extends Nguoi implements java.io.Serializable{
-    String maSV;
-    String lop;
+    String IDKH;
+    String DoanhNghiep;
 
-    public KhachHang(String maSV, String lop, String ho, String ten, String diaChi) {
+    public KhachHang(String maKH, String DNghiep, String ho, String ten, String diaChi) {
         super(ho, ten, diaChi);
-        this.maSV = maSV;
-        this.lop = lop;
+        this.IDKH = maKH;
+        this.DoanhNghiep = DNghiep;
     }
     
     public KhachHang() {
     }
 
-    public String getLop() {
-        return lop;
+    public String getDN() {
+        return DoanhNghiep;
     }
 
-    public void setLop(String lop) {
-        this.lop = lop;
+    public void setDN(String DN) {
+        this.DoanhNghiep = DN; 
     }
 
-    public String getMaSV() {
-        return maSV;
+    public String getMKH() {
+        return IDKH;
     }
 
-    public void setMaSV(String maSV) {
-        this.maSV = maSV;
+    public void getMKH(String maKH) {
+        this.IDKH = maKH;
     }
     public Object[] toArray(){
-        return new Object[]{maSV,ho,ten,diaChi,lop};
+        return new Object[]{IDKH,ho,ten,diaChi,DoanhNghiep};
     }
     
 }

@@ -2,47 +2,47 @@ package entity;
 
 /**
  *
- * @author
+ * @author  Nhan
  */
 public class MatHang implements java.io.Serializable {
-	String maMon;
-	String tenMon;
-	int soDonviht;
+	String IDMatHang;
+	String TenMatHang;
+	int SoLương;
 
-	public MatHang(String maMon, String tenMon, int soDonviht) {
-		this.maMon = maMon;
-		this.tenMon = tenMon;
-		this.soDonviht = soDonviht;
+	public MatHang(String IDMH, String name, int DVT) {
+		this.IDMatHang = IDMH;
+		this.TenMatHang = name;
+		this.SoLương = DVT;
 	}
 
 	public MatHang() {
 	}
 
-	public String getMaMon() {
-		return maMon;
+	public String getIDMH() {
+		return IDMatHang;
 	}
 
-	public void setMaMon(String maMon) {
-		this.maMon = maMon;
+	public void setIDMH(String maMon) {
+		this.IDMatHang = maMon;
 	}
 
 	public int getSoDonviht() {
-		return soDonviht;
+		return SoLương;
 	}
 
 	public void setSoDonviht(int soDonviht) {
-		this.soDonviht = soDonviht;
+		this.SoLương = soDonviht;
 	}
 
-	public String getTenMon() {
-		return tenMon;
+	public String getMH() {
+		return TenMatHang;
 	}
 
 	public void setTenMon(String tenMon) {
-		this.tenMon = tenMon;
+		this.TenMatHang = tenMon;
 	}
 
 	public Object[] toArray() {
-		return new Object[] { maMon, tenMon, soDonviht };
+		return new Object[] { IDMatHang, TenMatHang, SoLương };
 	}
 }
